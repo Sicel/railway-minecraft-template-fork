@@ -1,0 +1,45 @@
+service:
+  minecraft:
+    image: itzg/minecraft-server
+    container_name: minecraft-server
+    ports:
+      - "25565:25565"
+    environment:
+      EULA: "TRUE"
+      TYPE: "PAPER"
+      VERSION: "LATEST"
+
+      # Server Config
+      SERVER_NAME: "Names Are Hard"
+      MOTD: "WE BACK FUCKERS"
+      MEMORY: "4G"
+      DIFFICULTY: "normal"
+      MODE: "survival"
+      VIEW_DISTANCE: 10
+      SPAWN_PROTECTION: 0
+      MAX-PLAYERS: 6
+      
+      # World settings
+      LEVEL_TYPE: "minecraft:normal"
+      SEED: ""
+      GENERATE_STRUCTURES: "true"
+    volumes:
+      - mc-data:/data
+  backup:
+    image: itzg/mc-backup
+    container_name: minecraft-backup
+    environment:
+      BACKUP_INTERVAL: "24h"
+      # Keep backups from the last seven days
+      PRUNE_BACKUPS_DAYS: 7
+      # prevent saving during backup to prevent corruption
+      RCON_HOST: minecraft
+      RCON_PORT: 25575
+      RCON_PASSWORD: minecraft
+    volumes:
+      - mc-data:/data:ro
+      - mc-backups:/backups
+    depends_on:
+      - minecraft
+volumes:
+  mc-data:
