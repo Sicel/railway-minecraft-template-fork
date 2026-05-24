@@ -1,0 +1,17 @@
+{
+	id: "2ab1cdc9-0984-40ee-bf0a-a4dbcf4e2b6c"
+	type: "player"
+	player_name: "BigxFresh"
+	ranks: {
+		2ab1cdc9-0984-40ee-bf0a-a4dbcf4e2b6c: "owner"
+	}
+	properties: {
+		"ftbteams:display_name": "BigxFresh"
+		"ftbteams:description": ""
+		"ftbteams:color": "#FF5987"
+		"ftbteams:free_to_join": 0b
+		"ftbteams:max_msg_history_size": 1000
+	}
+	message_history: [ ]
+	extra: { }
+}

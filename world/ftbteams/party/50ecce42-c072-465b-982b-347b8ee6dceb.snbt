@@ -1,0 +1,22 @@
+{
+	id: "50ecce42-c072-465b-982b-347b8ee6dceb"
+	type: "party"
+	owner: "888bbadf-49d2-4fe0-87f2-7ca6b847fa72"
+	ranks: {
+		888bbadf-49d2-4fe0-87f2-7ca6b847fa72: "owner"
+	}
+	properties: {
+		"ftbteams:display_name": "The Team"
+		"ftbteams:description": ""
+		"ftbteams:color": "#59FFD8"
+		"ftbteams:free_to_join": 0b
+		"ftbteams:max_msg_history_size": 1000
+	}
+	message_history: [
+		{ from: "00000000-0000-0000-0000-000000000000", date: 1779563398144L, text: "{\"color\":\"yellow\",\"translate\":\"ftbteams.message.joined\",\"with\":[{\"text\":\"jt3ch\"}]}" }
+		{ from: "888bbadf-49d2-4fe0-87f2-7ca6b847fa72", date: 1779563398149L, text: "{\"color\":\"green\",\"translate\":\"ftbteams.message.invited\",\"with\":[{\"color\":\"yellow\",\"text\":\"BigxFresh\"}]}" }
+		{ from: "00000000-0000-0000-0000-000000000000", date: 1779563406835L, text: "{\"color\":\"green\",\"translate\":\"ftbteams.message.joined\",\"with\":[{\"text\":\"BigxFresh\"}]}" }
+		{ from: "00000000-0000-0000-0000-000000000000", date: 1779563459078L, text: "{\"color\":\"gold\",\"translate\":\"ftbteams.message.left_party\",\"with\":[{\"color\":\"yellow\",\"text\":\"BigxFresh\"}]}" }
+	]
+	extra: { }
+}

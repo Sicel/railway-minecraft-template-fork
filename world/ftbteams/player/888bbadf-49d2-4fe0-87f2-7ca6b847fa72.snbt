@@ -1,0 +1,15 @@
+{
+	id: "888bbadf-49d2-4fe0-87f2-7ca6b847fa72"
+	type: "player"
+	player_name: "jt3ch"
+	ranks: { }
+	properties: {
+		"ftbteams:display_name": "jt3ch"
+		"ftbteams:description": ""
+		"ftbteams:color": "#59FFD8"
+		"ftbteams:free_to_join": 0b
+		"ftbteams:max_msg_history_size": 1000
+	}
+	message_history: [ ]
+	extra: { }
+}
