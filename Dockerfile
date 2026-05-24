@@ -42,7 +42,6 @@ ENV CREATE_CONSOLE_IN_PIPE=true
 
 EXPOSE 3000
 
-VOLUME [ "/data" ]
 WORKDIR /data
 
 ENTRYPOINT ["/app/docker/start.sh"]
