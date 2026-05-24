@@ -14,12 +14,12 @@ FROM itzg/minecraft-server:latest
 
 ENV CONTROL_PORT=3000
 
-ENV EULA="TRUE"
+# ENV EULA="TRUE"
 # ENV TYPE="PAPER"
 # ENV VERSION="1.20.1"
 
 ENV SERVER_NAME="Names Are Hard"
-ENV GENERIC_PACKS="/data/"
+#ENV GENERIC_PACKS="/data/Liminal_Industries_Server_1.19.3.zip"
 # ENV MOTD="WELCOME TO THE RICEFIELDS"
 # ENV MEMORY="4G"
 # ENV DIFFICULTY="normal"
