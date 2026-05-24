@@ -8,6 +8,7 @@ dist
 
 # runtime data
 data
+!data/mods
 
 # code coverage
 coverage
