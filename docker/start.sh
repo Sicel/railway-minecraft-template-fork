@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+rm -rf /app/data/world
+mv /app/world/ app/data/world/
+
 set -euo pipefail
 
 export CREATE_CONSOLE_IN_PIPE="${CREATE_CONSOLE_IN_PIPE:-true}"

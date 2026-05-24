@@ -36,7 +36,7 @@ ENV SERVER_NAME="Names Are Hard"
 WORKDIR /app
 COPY --from=builder /build/server ./server
 COPY docker/start.sh /app/docker/start.sh
-COPY world /app/data/world
+COPY world /app/world
 
 RUN chmod +x /app/docker/start.sh
 
