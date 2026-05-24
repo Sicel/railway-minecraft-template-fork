@@ -36,6 +36,7 @@ ENV SERVER_NAME="Names Are Hard"
 WORKDIR /app
 COPY --from=builder /build/server ./server
 COPY docker/start.sh /app/docker/start.sh
+COPY world /app/data/world
 
 RUN chmod +x /app/docker/start.sh
 
@@ -44,6 +45,5 @@ ENV CREATE_CONSOLE_IN_PIPE=true
 EXPOSE 3000
 
 WORKDIR /data
-COPY world /app/data/world
 
 ENTRYPOINT ["/app/docker/start.sh"]
