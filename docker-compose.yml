@@ -1,17 +1,18 @@
 service:
   minecraft:
-    image: itzg/minecraft-server
+    image: minecraft-server
+    build: .
     container_name: minecraft-server
     ports:
       - "25565:25565"
     environment:
       EULA: "TRUE"
       TYPE: "PAPER"
-      VERSION: "LATEST"
+      VERSION: "1.20.1"
 
       # Server Config
       SERVER_NAME: "Names Are Hard"
-      MOTD: "WE BACK FUCKERS"
+      MOTD: "WELCOME TO THE RICEFIELDS"
       MEMORY: "4G"
       DIFFICULTY: "normal"
       MODE: "survival"
