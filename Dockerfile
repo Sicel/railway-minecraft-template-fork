@@ -19,7 +19,7 @@ ENV CONTROL_PORT=3000
 # ENV VERSION="1.20.1"
 
 ENV SERVER_NAME="Names Are Hard"
-#ENV GENERIC_PACKS="/data/Liminal_Industries_Server_1.19.3.zip"
+ENV GENERIC_PACKS="/data/Liminal_Industries_Server-1.19.3.zip"
 # ENV MOTD="WELCOME TO THE RICEFIELDS"
 # ENV MEMORY="4G"
 # ENV DIFFICULTY="normal"
