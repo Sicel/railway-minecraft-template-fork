@@ -1210,7 +1210,7 @@ const server = Bun.serve<ConsoleLogSocketData>({
 						resolveSafePath(destinationRelative);
 
 					if (!req.body) {
-						return json({ error: "Missing upload body." }, { status: 400 });
+						//return json({ error: "Missing upload body." }, { status: 400 });
 					}
 
 					const bytes = new Uint8Array(await req.arrayBuffer());
